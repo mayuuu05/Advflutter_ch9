@@ -73,91 +73,87 @@ class HomeScreen extends StatelessWidget {
                     return Padding(
                       padding: const EdgeInsets.all(5.0),
                       child: ListView.builder(
-                        physics: BouncingScrollPhysics(),
+                        physics: const BouncingScrollPhysics(),
                         itemCount: image!.hits.length,
                         itemBuilder: (context, index) {
                           int likes = image.hits[index].likes;
                           bool isLiked = false;
-                          return StatefulBuilder(
-                            builder: (context, setState) {
-                              return Container(
-                                height: 200,
-                                margin: const EdgeInsets.all(10),
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[200],
-                                  borderRadius: BorderRadius.circular(20),
-                                  image: DecorationImage(
-                                    image: NetworkImage(image.hits[index].largeImageURL),
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
-                                child: Stack(
-                                  children: [
-                                    Positioned(
-                                      bottom: 10,
-                                      left: 10,
-                                      right: 10,
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(15),
-                                        child: BackdropFilter(
-                                          filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-                                          child: Container(
-                                            padding: const EdgeInsets.all(8.0),
-                                            color: Colors.black.withOpacity(0.3),
-                                            child: Row(
-                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          return Container(
+                            height: 200,
+                            margin: const EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[200],
+                              borderRadius: BorderRadius.circular(20),
+                              image: DecorationImage(
+                                image: NetworkImage(image.hits[index].largeImageURL),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                  bottom: 10,
+                                  left: 10,
+                                  right: 10,
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(15),
+                                    child: BackdropFilter(
+                                      filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+                                      child: Container(
+                                        padding: const EdgeInsets.all(8.0),
+                                        color: Colors.black.withOpacity(0.3),
+                                        child: Row(
+                                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                          children: [
+                                            Row(
                                               children: [
-                                                Row(
-                                                  children: [
-                                                    const Icon(Icons.remove_red_eye, color: Colors.white),
-                                                    const SizedBox(width: 5),
-                                                    Text(
-                                                      '${image.hits[index].views}',
-                                                      style: const TextStyle(color: Colors.white),
-                                                    ),
-                                                  ],
-                                                ),
-                                                Row(
-                                                  children: [
-                                                    IconButton(
-                                                      icon: const Icon(Icons.download, color: Colors.white),
-                                                      onPressed: ()  {
-                                                      },
-                                                    ),
-                                                    const SizedBox(width: 5),
-                                                    Text(
-                                                      '${image.hits[index].downloads}',
-                                                      style: const TextStyle(color: Colors.white),
-                                                    ),
-                                                  ],
-                                                ),
-                                                Row(
-                                                  children: [
-                                                    IconButton(
-                                                      icon: Icon(
-                                                        Icons.thumb_up,
-                                                        color: isLiked ? Colors.red : Colors.white,
-                                                      ),
-                                                      onPressed: () {
-                                                      },
-                                                    ),
-                                                    const SizedBox(width: 5),
-                                                    Text(
-                                                      '${image.hits[index].likes}',
-                                                      style: const TextStyle(color: Colors.white),
-                                                    ),
-                                                  ],
+                                                const Icon(Icons.remove_red_eye, color: Colors.white),
+                                                const SizedBox(width: 5),
+                                                Text(
+                                                  '${image.hits[index].views}',
+                                                  style: const TextStyle(color: Colors.white),
                                                 ),
                                               ],
                                             ),
-                                          ),
+                                            Row(
+                                              children: [
+                                                IconButton(
+                                                  icon: const Icon(Icons.download, color: Colors.white),
+                                                  onPressed: ()  {
+                                                  },
+                                                ),
+                                                const SizedBox(width: 5),
+                                                Text(
+                                                  '${image.hits[index].downloads}',
+                                                  style: const TextStyle(color: Colors.white),
+                                                ),
+                                              ],
+                                            ),
+                                            Row(
+                                              children: [
+                                                IconButton(
+                                                  icon: Icon(
+                                                    Icons.thumb_up,
+                                                    color: isLiked ? Colors.red : Colors.white,
+                                                  ),
+                                                  onPressed: () {
+                                                  },
+                                                ),
+                                                const SizedBox(width: 5),
+                                                Text(
+                                                  '${image.hits[index].likes}',
+                                                  style: const TextStyle(color: Colors.white),
+                                                ),
+                                              ],
+                                            ),
+                                          ],
                                         ),
                                       ),
                                     ),
-                                  ],
+                                  ),
                                 ),
-                              );
-                            },
+                              ],
+                            ),
                           );
                         },
                       ),
