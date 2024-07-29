@@ -6,6 +6,7 @@ API stands for Application Programming Interface. It is a set of rules and proto
 
 
 # 9.1 Dummy Json API Calling
+# Recipe aPP
 
 <div> 
   <img src = "https://github.com/user-attachments/assets/87c1d67b-45da-4f87-8e95-6d7d71fbb9e7"  height=35% width=22%  />
@@ -16,6 +17,25 @@ API stands for Application Programming Interface. It is a set of rules and proto
 
   <video height="450" src="https://github.com/user-attachments/assets/75a877b2-d0c7-4114-a8db-7e6c75fa1c82" />
 </div>
+
+
+
+# 9.1 Dummy Json API Calling
+# E commerce App
+
+<div> 
+  <img src = "https://github.com/user-attachments/assets/85fb05d9-d4f9-4f52-bf7b-5966db601c36"  height=35% width=22%  />
+   <img src = "https://github.com/user-attachments/assets/a9446395-b74c-4378-a60f-43c4b79ae1f0"  height=35% width=22%  />
+   <img src = "https://github.com/user-attachments/assets/6bde7317-9027-4f95-b39b-04da834aec1e"  height=35% width=22%  />
+    <img src = "https://github.com/user-attachments/assets/f4ab8196-b205-4090-8e0a-8329185e1f34"  height=35% width=22%  />
+     <img src = "https://github.com/user-attachments/assets/39a8233e-0f91-451d-a313-f7951daf6388"  height=35% width=22%  />
+
+
+
+  <video height="450" src="https://github.com/user-attachments/assets/bd2abd9e-3ffc-401e-8ae7-e3755e39cde6" />
+</div>
+
+
 
 
 
