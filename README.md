@@ -12,9 +12,6 @@ API stands for Application Programming Interface. It is a set of rules and proto
   <img src = "https://github.com/user-attachments/assets/87c1d67b-45da-4f87-8e95-6d7d71fbb9e7"  height=35% width=22%  />
    <img src = "https://github.com/user-attachments/assets/231114f1-53d1-48a9-b2bb-552d7cf8b2c8"  height=35% width=22%  />
    <img src = "https://github.com/user-attachments/assets/9d19fe75-7d3a-4607-baae-e7476fc54034"  height=35% width=22%  />
-
-
-
   <video height="450" src="https://github.com/user-attachments/assets/75a877b2-d0c7-4114-a8db-7e6c75fa1c82" />
 </div>
 
