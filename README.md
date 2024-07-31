@@ -14,9 +14,6 @@ API stands for Application Programming Interface. It is a set of rules and proto
    <img src = "https://github.com/user-attachments/assets/9d19fe75-7d3a-4607-baae-e7476fc54034"  height=35% width=22%  />
   <video height="450" src="https://github.com/user-attachments/assets/75a877b2-d0c7-4114-a8db-7e6c75fa1c82" />
 </div>
-
-
-
 # 9.1 Dummy Json API Calling
 # E commerce App
 
